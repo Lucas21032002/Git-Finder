@@ -7,7 +7,6 @@ export function Home() {
     return(
         <>
         <SearchBar/>
-        <h1>gitHUb</h1>
         <p>Home</p>
         </>
     )
