@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { SearchBar } from "../components/SearchBar";
-import { User } from "../components/User";
+import { SearchBar } from "../components/SearchBar/SearchBar";
+import { User } from "../components/User/User";
 import { UserProps } from "../types/user";
 
 export function Home() {
