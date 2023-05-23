@@ -1,5 +1,5 @@
 import { UserProps } from "../../types/user";
-import { MdLocationPin } from "react-icons/md"
+import { MdCompareArrows, MdLocationPin } from "react-icons/md"
 import { Link } from "react-router-dom";
 import classes from './User.module.css'
 
@@ -16,7 +16,9 @@ export function User({
         <div className={classes.userContainer}>
             <img src={avatar_url}/>
             <h3>{name}</h3>
-            <p>Cargo: {company}</p>
+            { company && (
+                <p>Cargo: {company}</p>
+            )}
             {location && (
                 <p>
                     <MdLocationPin/>
