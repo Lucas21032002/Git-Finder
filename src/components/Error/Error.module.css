@@ -1,0 +1,20 @@
+.errorContent {
+    background-color: #1D1D1D;
+    color: white;
+
+    border-radius: 6px;
+    border: 2px solid transparent;
+
+    width: 520px;
+    height: 120px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+
+    margin: auto;
+    margin-top: 2rem;
+
+    padding: 1rem;
+}

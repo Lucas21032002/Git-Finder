@@ -4,6 +4,8 @@ type SearchProps = {
 import {useState, KeyboardEvent} from "react";
 import { BsSearch } from "react-icons/bs";
 
+import classes from './SearchBar.module.css'
+
 
 
 export function SearchBar({loadUser}: SearchProps) {
@@ -16,10 +18,11 @@ export function SearchBar({loadUser}: SearchProps) {
     }
 
     return(
-        <div>
+        <div className={classes.searchContainer}>
+            <h1>Github finder</h1>
             <h2>Busque por um usuário:</h2>
             <p>Conheça seus melhores repositórios</p>
-            <div>
+            <div className={classes.inputContainer}>
                 <input 
                 type="text" 
                 placeholder='Digite aqui' 
